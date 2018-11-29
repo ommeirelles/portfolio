@@ -2,6 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ommeirelles.github.io/portfolio/",
   "dependencies": {
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
