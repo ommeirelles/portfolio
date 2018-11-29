@@ -1,0 +1,38 @@
+@import '../../style/tools/mixins'
+    
+.personal-info
+    display: flex
+    flex-direction: column
+
+    +desktop()
+        justify-content: flex-start
+
+    +desktopBig()
+        justify-content: flex-start
+
+    +mobile()
+        > .info-list > li
+            text-align: center
+
+    > .name
+        display: inline-flex
+        flex-direction: column
+        letter-spacing: .75px
+
+        &::after
+            content: "computer scientist"
+            display: inline-block
+            font-size: 16px
+            text-transform: capitalize
+
+    > .info-list
+        list-style-type: none
+        margin: 0
+        padding: 0px
+
+        > li
+            line-height: 24px
+            text-transform: capitalize
+
+            > p > i
+                margin: 0px 8px
