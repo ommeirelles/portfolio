@@ -1,10 +1,10 @@
 import React from 'react';
-import './contact.sass';
+import styles from './contact.module.sass';
 
 export default () => (
-    <div className="contact">
+    <div className={styles.contact}>
         <h3>Contact</h3>
-        <ul className="social-list">
+        <ul className={styles["social-list"]}>
             {social &&
                 Object.getOwnPropertyNames(social).map(i => (
                     <li key={i}>

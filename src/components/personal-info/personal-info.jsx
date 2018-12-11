@@ -1,10 +1,10 @@
 import React from 'react';
-import './personal-info.sass';
+import styles from './personal-info.module.sass';
 
 export default () => (
-    <div className="personal-info">
-        <h1 className="name">Otávio Moreira Meirelles</h1>
-        <ul className="info-list">
+    <div className={styles["personal-info"]}>
+        <h1 className={styles.name}>Otávio Moreira Meirelles</h1>
+        <ul className={styles["info-list"]}>
             <li>
                 <p>
                     <i className="fas fa-calendar" />

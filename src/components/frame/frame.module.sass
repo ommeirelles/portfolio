@@ -1,0 +1,17 @@
+@import '../../style/settings/variables'
+@import '../../style/tools/mixins'
+
+.frame
+    border: 8px solid $second
+    padding: 1px
+    box-sizing: border-box
+
+    +desktop()
+        width: 350px
+    
+    +desktopBig()
+        width: 400px
+
+    +mobile()
+        width: 320px
+        max-height: 480px

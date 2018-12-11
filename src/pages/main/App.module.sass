@@ -11,9 +11,6 @@
     position: fixed
     right: 80px
 
-    > .frame
-      width: 350px
-
   +desktopBig()
     display: flex
     height: 100vh
@@ -21,18 +18,12 @@
     position: fixed
     right: 80px
 
-    > .frame
-      width: 400px
-
   +mobile()
     display: flex
     justify-content: center
     margin: 32px 0px
     width: 100%;
 
-    > .frame
-        width: 320px
-        max-height: 480px
 
 .app
   align-items: flex-start
@@ -56,9 +47,6 @@
   > .content
     display: flex
     flex-direction: column
-
-    > .personal-info > h1
-      margin-top: 0
 
     +desktop()
       flex: 0 1 60%

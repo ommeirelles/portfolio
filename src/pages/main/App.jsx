@@ -5,15 +5,15 @@ import Experience from '../../components/experience/experience';
 import PersonalInfo from '../../components/personal-info/personal-info';
 import IImage from '../../static/i.jpg';
 
-import './App.sass';
+import styles from './App.module.sass';
 class App extends Component {
   render() {
     return (
       <>
-        <div className="app">
-          <div className="content">
+        <div className={styles.app}>
+          <div className={styles.content}>
             <PersonalInfo />
-            <b className="line"></b>
+            <b className={styles.line}></b>
             <p>Experiences</p>
             <Experience
               title="Front End Developer"
@@ -43,11 +43,11 @@ class App extends Component {
               local="MediLab Sistemas"
               URL="http://www.medilabsistemas.com.br/"
             />
-            <b className="line"></b>
+            <b className={styles.line}></b>
             <Contact />
           </div>
         </div>
-        <div className="frame-wraper">
+        <div className={styles["frame-wraper"]}>
           <Frame src={IImage} alt="Otávio Moreira Meirelles" />
         </div>
       </>

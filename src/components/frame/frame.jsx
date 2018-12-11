@@ -1,4 +1,4 @@
 import React from 'react';
-import './frame.sass';
+import styles from './frame.module.sass';
 
-export default ({ src, alt }) => <img className="frame" src={src} alt={alt} />
+export default ({ src, alt }) => <img className={styles.frame} src={src} alt={alt} />
