@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://ommeirelles.github.io/portfolio/",
   "dependencies": {
+    "commitizen": "^3.0.5",
     "node-sass": "^4.10.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -15,7 +16,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "commit": "git-cz"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,6 +29,12 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
     "gh-pages": "^2.0.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
